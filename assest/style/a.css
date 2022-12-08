@@ -1,0 +1,173 @@
+
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #edecec;
+  direction: rtl;
+}
+.clearfix {
+  clear: both;
+}
+:root {
+  --blue : #102f49;
+}
+
+
+/* start header style */
+.head-1 {
+  margin: 0% 2.5%;
+  text-align: center;
+  background-color: var(--blue);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.head-1 h2 {
+  color: white;
+  margin: 0%;
+  height: 60px;
+  padding-top: 20px;
+}
+.head-2 {
+  margin: 0% 2.5%;
+  padding: 20px;
+  background-color: #282a35;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  position: sticky;
+  top : 0;
+  z-index: 999;
+}
+.head-2 form {
+  float: left;
+}
+.head-2 a {
+  color: white;
+  font-size: 17px;
+  text-decoration: none;
+}
+.head-2 i:not(:last-child) {
+  color: white;
+  font-size: 17px;
+}
+/* end header style */
+
+
+
+/* start book style */
+.ever-cell {
+  float: right;
+  width: 20%;
+  margin: 3% 2.5%;
+  text-align: center;
+  border-radius: 15px;
+  height: 200px;
+  position: relative;
+}
+.first {
+  height: 200px;
+  margin-bottom: 0%;
+  transition-delay: 900ms;
+}
+.img1 {
+  width: 100%;
+  height: 200px;
+  border-radius: 15px;
+}
+.first:hover {
+  opacity: .1;
+}
+
+.second {
+  border-radius: 10px;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  font-weight: 900;
+  font-size: 20px;
+  color : aqua;
+  text-align: center;
+  transition-delay: 900ms;
+}
+.ever-cell:hover .second {
+  opacity: 1;
+  background-image: linear-gradient(
+    to top,
+    rgba(4, 0, 0, 0.391),
+    rgba(235, 228, 228, 0.087)
+  );
+}
+
+.third {
+  opacity: 0;
+  width: 900px;
+  height: 400px;
+  background-color:  var(--blue);
+  position: fixed;
+  top: 150px;
+  right: 200px;
+  border-radius: 10px;
+  z-index: 99;
+  transition-delay: 1500ms;
+}
+.third-1 {
+  width: 50%;
+  float: right;
+  padding: 20px;
+  font: 200 oblique;
+  color: white;
+  margin: 100px 0;
+}
+.third-2 {
+  margin: 10% 5%;
+  float: left;
+  width: 40%;
+  background-image: radius-gradient (to top rgb(25, 85, 102), rgb(175, 17, 17));
+}
+.img2 {
+  width: 100%;
+  border-radius: 10px;
+  float: left;
+  height: 200px;
+}
+.ever-cell:hover .third {
+  opacity: 1;
+}
+/* end book style */
+
+
+/* start teaser style */
+.teaser {
+  float: right;
+  width: 27%;
+  margin: 3.16%;
+  background-color: rgb(18, 159, 159);
+  border-radius: 10px;
+  border : 1px solid  var(--blue);;
+}
+.teaser:hover {
+  opacity: 0.53;
+}
+/* end teaser style */
+ 
+
+/* start footer style */
+.footer {
+  float: right;
+  background-color:  var(--blue);;
+  color: white;
+  width: 94%;
+  text-align: center;
+  margin: 1.5% 2.5%;
+}
+.footer i {
+ margin :3% 1%;
+ color:rgba(4, 0, 0, 0.391);
+ font-weight: 900;
+ font-size: x-large;
+}
+/* end footer style */
+ 
